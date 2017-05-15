@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='js/summary.js'></script>
+</head>
+<body>
+    <div style="display: flex">
+        <!-- left side bar -->
+        <div style="width: 15%">
+            <h2>form</h2>
+            <form id='slot_form' action='/slot' method='PUT'>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Ma SV</td>
+                        </tr>
+                        <tr>
+                            <td><input type='text' name='std_code'></td>
+                        </tr>
+                        <tr>
+                            <td>Ho & ten</td>
+                        </tr>
+                        <tr>
+                            <td><input type='text' name='std_fullname'></td>
+                        </tr>
+                        <tr>
+                            <td>ngay sinh</td>
+                        </tr>
+                        <tr>
+                            <td><input type='text' name='std_birthday'></td>
+                        </tr>
+                        <tr><td>lop khoa hoc</td>
+                        </tr>
+                        <tr><td><input type='text' name='std_klass'></td>
+                        </tr>
+                        <tr><td>Ma LMH</td>
+                        </tr>
+                        <tr><td><input type='text' name='c_code'></td>
+                        </tr>
+                        <tr><td>Ten mon hoc</td>
+                        </tr>
+                        <tr><td><input type='text' name='c_name'></td>
+                        </tr>
+                        <tr><td>Nhom</td>
+                        </tr>
+                        <tr><td><input type='text' name='c_group'></td>
+                        </tr>
+                        <tr><td>TC</td>
+                        </tr>
+                        <tr><td><input type='text' name='c_tc'></td>
+                        </tr>
+                        <tr><td>Ghi chu</td>
+                        </tr>
+                        <tr><td><input type='text' name='note'></td>
+                        </tr>
+                        <tr><td>hoc ky</td>
+                        </tr>
+                        <tr><td><input type='text' name='c_term'></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <button id='save'>send</button>
+        </div>
+        <!-- table -->
+        <div style="width: 85%">
+            <h2>Slot list</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ma SV</th>
+                            <th>Ho & ten</th>
+                            <th>ngay sinh</th>
+                            <th>lop khoa hoc</th>
+                            <th>Ma LMH</th>
+                            <th>Ten mon hoc</th>
+                            <th>Nhom</th>
+                            <th>TC</th>
+                            <th>Ghi chu</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id='list_body'>
+                        <% slots.forEach((slot) => { %>
+                        <% if( typeof(slot.student) !== typeof({})) slot.student = {}; %>
+                        <% if( typeof(slot.course) !== typeof({})) slot.course = {}; %>
+                            <tr>
+                                <td><%= slot.student.code %></td>
+                                <td><%= slot.student.fullname %></td>
+                                <td><%= slot.student.birthday %></td>
+                                <td><%= slot.student.klass %></td>
+                                <td><%= slot.course.code %></td>
+                                <td><%= slot.course.name %></td>
+                                <td><%= slot.course.group %></td>
+                                <td><%= slot.course.tc %></td>
+                                <td><%= slot.note %></td>
+                                <td>
+                                    <a href="#" class="delete" data='<%= slot._id%>'>delete</a>
+                                </td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
