@@ -83,17 +83,10 @@ app.get('/', (req, res) => {
 //@param pageSize
 app.post('/', (req, res) => {
     var term = '2016-2017-1';
-    if( req.body['SinhvienLmh[term_id]']) === '022' ) term = '2016-2017-2';
-    const { term_id, page, pagaSize } = {
-        term_id: req.query.SinhvienLmh.term_id,
-        page: req.query.SinhvienLmh_page,
-        pageSize: req.query.pageSize
-    };
-    db.collection('slot').find({termID: term_id}).skip(pageSize * (page-1)).limit(pageSize).toArray((err, results)=>
+    if( req.body['SinhvienLmh[term_id]'] === '022' ) term = '2016-2017-2';
+    db.collection('slot').find({'course.term': term}).toArray((err, results)=>
     {
         if( err ) return console.log(err);
-        db.collection('slot').count((err, count) => {
-            res.json({count: count, slots: results});
-        })
+        res.json(results);
     });
 })

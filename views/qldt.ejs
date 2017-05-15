@@ -1,22 +1,20 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="en" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="en">
 
 	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/css/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/css/screen.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/css/print.css" media="print">
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/css/ie.css" media="screen, projection" />
 	<![endif]-->
 
-	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/css/form.css" />
-
-	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/assets/baad5fe1/gridview/styles.css" />
-<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/assets/e69e106d/pager.css" />
+	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/css/form.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/assets/baad5fe1/gridview/styles.css">
+<link rel="stylesheet" type="text/css" href="/congdaotao/module/qldt/assets/e69e106d/pager.css">
 <title>Tra cứu danh sách lớp môn học - Admin SinhvienLmh</title>
 </head>
 
@@ -30,7 +28,7 @@
 			<img src="/congdaotao/module/qldt/css/uet_logo.png" alt="Đại học Công Nghệ">
 		</div>
 		<div class="center_logo">
-			<a href="#" target=""><img alt="Đại học Công Nghệ" src="/congdaotao/module/qldt/css/dhcn.png"></a>
+			<a href="#" target=""><img alt="Đại học Công Nghệ" src="/congdaotao/module/qldt/css/dhcn.png" data-pin-nopin="true"></a>
 			<h1 align="center" class="htitle">Tra cứu danh sách lớp môn học</h1>
 		</div>
 	</div>
@@ -42,8 +40,8 @@
 <li><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/#"></a></li>
 </ul>	</div><!-- mainmenu -->
 			<div class="breadcrumbs">
-<a href="/congdaotao/module/qldt/index.php">Home</a> &raquo; <a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/index">Sinhvien Lmhs</a> &raquo; <span>Manage</span></div><!-- breadcrumbs -->
-		<div id="content">
+<a href="/congdaotao/module/qldt/index.php">Home</a> » <a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/index">Sinhvien Lmhs</a> » <span>Manage</span></div><!-- breadcrumbs -->
+		<div id="content" style="height: 0px;">
 
 <div class="span-5 last">
 	<div id="sidebar">
@@ -68,27 +66,40 @@
 <option value="022">Học kỳ 2 năm học 2016-2017</option>
 <option value="021">Học kỳ 1 năm học 2016-2017</option>
 </select></form><div id="sinhvien-lmh-grid" class="grid-view">
+<div class="pager"><ul id="yw0" class="yiiPager">
+<li class="first hidden"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid">Đầu tiên</a></li>
+<li class="previous hidden"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid">Trước</a></li>
+<li class="page selected"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid">1</a></li>
+<li class="page"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;SinhvienLmh_page=2">2</a></li>
+<li class="next"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;SinhvienLmh_page=2">Sau</a></li>
+<li class="last"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;SinhvienLmh_page=1585">Cuối cùng</a></li></ul></div>
+<div class="summary"></div>
 <table class="items">
 <thead>
 <tr>
-<th id="sinhvien-lmh-grid_c0"><select onchange="$.fn.yiiGridView.update(&#039;sinhvien-lmh-grid&#039;,{ data:{pageSize: $(this).val() }})" name="pageSize" id="pageSize">
+<th id="sinhvien-lmh-grid_c0"><select onchange="$.fn.yiiGridView.update('sinhvien-lmh-grid',{ data:{pageSize: $(this).val() }})" name="pageSize" id="pageSize">
 <option value="10">10</option>
 <option value="50">50</option>
 <option value="100">100</option>
 <option value="200">200</option>
 <option value="500">500</option>
-</select></th><th id="sinhvien-lmh-grid_c1"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;sort=masvTitle">Mã SV</a></th><th id="sinhvien-lmh-grid_c2"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;sort=hotenTitle">Họ và tên</a></th><th id="sinhvien-lmh-grid_c3">Ngày sinh</th><th id="sinhvien-lmh-grid_c4"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;sort=lopkhoahocTitle">Lớp khóa học</a></th><th id="sinhvien-lmh-grid_c5"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;sort=tenlopmonhocTitle">Mã LMH</a></th><th id="sinhvien-lmh-grid_c6"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;sort=tenmonhocTitle">Tên môn học</a></th><th id="sinhvien-lmh-grid_c7"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;sort=nhom">Nhóm</a></th><th id="sinhvien-lmh-grid_c8"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;sort=sotinchiTitle">Số TC</a></th><th id="sinhvien-lmh-grid_c9"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;sort=ghichu">Ghi chú</a></th><th style="display:none" id="sinhvien-lmh-grid_c10">Term</th></tr>
+</select></th><th id="sinhvien-lmh-grid_c1"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;sort=masvTitle">Mã SV</a></th><th id="sinhvien-lmh-grid_c2"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;sort=hotenTitle">Họ và tên</a></th><th id="sinhvien-lmh-grid_c3">Ngày sinh</th><th id="sinhvien-lmh-grid_c4"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;sort=lopkhoahocTitle">Lớp khóa học</a></th><th id="sinhvien-lmh-grid_c5"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;sort=tenlopmonhocTitle">Mã LMH</a></th><th id="sinhvien-lmh-grid_c6"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;sort=tenmonhocTitle">Tên môn học</a></th><th id="sinhvien-lmh-grid_c7"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;sort=nhom">Nhóm</a></th><th id="sinhvien-lmh-grid_c8"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;sort=sotinchiTitle">Số TC</a></th><th id="sinhvien-lmh-grid_c9"><a class="sort-link" href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;sort=ghichu">Ghi chú</a></th><th style="display:none" id="sinhvien-lmh-grid_c10">Term</th></tr>
 <tr class="filters">
-<td>&nbsp;</td><td><input name="SinhvienLmh[masvTitle]" type="text" /></td><td><input name="SinhvienLmh[hotenTitle]" type="text" /></td><td><input name="SinhvienLmh[ngaysinhTitle]" type="text" /></td><td><input name="SinhvienLmh[lopkhoahocTitle]" type="text" /></td><td><input name="SinhvienLmh[tenlopmonhocTitle]" type="text" /></td><td><input name="SinhvienLmh[tenmonhocTitle]" type="text" /></td><td><input name="SinhvienLmh[nhom]" type="text" maxlength="10" /></td><td><input name="SinhvienLmh[sotinchiTitle]" type="text" /></td><td><input name="SinhvienLmh[ghichu]" type="text" maxlength="200" /></td><td style="display:none"><select name="SinhvienLmh[term_id]">
+<td>&nbsp;</td><td><input name="SinhvienLmh[masvTitle]" type="text"></td><td><input name="SinhvienLmh[hotenTitle]" type="text"></td><td><input name="SinhvienLmh[ngaysinhTitle]" type="text"></td><td><input name="SinhvienLmh[lopkhoahocTitle]" type="text"></td><td><input name="SinhvienLmh[tenlopmonhocTitle]" type="text"></td><td><input name="SinhvienLmh[tenmonhocTitle]" type="text"></td><td><input name="SinhvienLmh[nhom]" type="text" maxlength="10"></td><td><input name="SinhvienLmh[sotinchiTitle]" type="text"></td><td><input name="SinhvienLmh[ghichu]" type="text" maxlength="200"></td><td style="display:none"><select name="SinhvienLmh[term_id]">
 <option value=""></option>
-<option value="022">022</option>
+<option value="022" selected="selected">022</option>
 <option value="021">021</option>
 </select></td></tr>
 </thead>
-<tbody>
-<tr><td colspan="11" class="empty"><span class="empty">No results found.</span></td></tr>
+<tbody id='slot_tbody'>
+
 </tbody>
-</table><div class="keys" style="display:none" title="/congdaotao/module/qldt/"></div>
+</table><div class="pager"><ul id="yw1" class="yiiPager"><li class="first hidden"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid">Đầu tiên</a></li>
+<li class="previous hidden"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid">Trước</a></li>
+<li class="page selected"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid">1</a></li>
+<li class="page"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;SinhvienLmh_page=2">2</a></li>
+<li class="next"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;SinhvienLmh_page=2">Sau</a></li>
+<li class="last"><a href="/congdaotao/module/qldt/index.php?r=sinhvienLmh/admin&amp;SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid&amp;SinhvienLmh_page=1585">Cuối cùng</a></li></ul></div><div class="keys" style="display:none" title="/congdaotao/module/qldt/?SinhvienLmh%5Bterm_id%5D=022&amp;ajax=sinhvien-lmh-grid"><span>2708914</span><span>2705923</span><span>2707629</span><span>2705929</span><span>2705934</span><span>2704362</span><span>2717209</span><span>2710775</span><span>2710411</span><span>2709236</span></div>
 </div>	</div><!-- content -->
 </div>
 	</div>
@@ -97,8 +108,7 @@
 	<div id="footer">
 
 	</div><!-- footer -->
-	<a href="#" class="scrollup" style="display: inline;">Scroll</a>
+	<a href="#" class="scrollup" style="display: none;">Scroll</a>
 </div><!-- page -->
 
-</body>
-</html>
+<span style="border-radius: 3px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;">Save</span></body></html>
