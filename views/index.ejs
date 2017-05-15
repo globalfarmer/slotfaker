@@ -11,7 +11,13 @@
             <h2>form</h2>
             <form id='slot_form' action='/slot' method='PUT'>
                 <table>
-                    <tbody>
+                    <tbody id='slot_data'>
+                        <tr>
+                            <td>_id</td>
+                        </tr>
+                        <tr>
+                            <td><input type='text' name='_id'></td>
+                        </tr>
                         <tr>
                             <td>Ma SV</td>
                         </tr>
@@ -70,6 +76,7 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>id</th>
                             <th>Ma SV</th>
                             <th>Ho & ten</th>
                             <th>ngay sinh</th>
@@ -79,6 +86,7 @@
                             <th>Nhom</th>
                             <th>TC</th>
                             <th>Ghi chu</th>
+                            <th>term</th>
                             <th>delete</th>
                         </tr>
                     </thead>
@@ -86,7 +94,8 @@
                         <% slots.forEach((slot) => { %>
                         <% if( typeof(slot.student) !== typeof({})) slot.student = {}; %>
                         <% if( typeof(slot.course) !== typeof({})) slot.course = {}; %>
-                            <tr>
+                            <tr class='row' data='<%= slot._id %>'>
+                                <td><%= slot._id %></td>
                                 <td><%= slot.student.code %></td>
                                 <td><%= slot.student.fullname %></td>
                                 <td><%= slot.student.birthday %></td>
@@ -96,6 +105,7 @@
                                 <td><%= slot.course.group %></td>
                                 <td><%= slot.course.tc %></td>
                                 <td><%= slot.note %></td>
+                                <td><%= slot.course.term %></td>
                                 <td>
                                     <a href="#" class="delete" data='<%= slot._id%>'>delete</a>
                                 </td>

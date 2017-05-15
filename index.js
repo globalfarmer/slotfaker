@@ -20,6 +20,8 @@ MongoClient.connect('mongodb://127.0.0.1:27017/slotfaker', (err, database) => {
 });
 // update
 app.put('/slot', (req, res) => {
+    console.log(req.body);
+    if( req.body._id ===  "") req.body._id = undefined;
     var slot = {
         student: {
             code: req.body.std_code,
@@ -79,11 +81,13 @@ app.get('/', (req, res) => {
 //@param SinhvienLmh[term_id]
 //@param SinhvienLmh_page
 //@param pageSize
-app.get('/', (req, res) => {
+app.post('/', (req, res) => {
+    var term = '2016-2017-1';
+    if( req.body['SinhvienLmh[term_id]']) === '022' ) term = '2016-2017-2';
     const { term_id, page, pagaSize } = {
-        term_id: res.body['SinhvienLmh[term_id]'],
-        page: res.body['SinhvienLmh'],
-        pageSize: res.body['pageSize']
+        term_id: req.query.SinhvienLmh.term_id,
+        page: req.query.SinhvienLmh_page,
+        pageSize: req.query.pageSize
     };
     db.collection('slot').find({termID: term_id}).skip(pageSize * (page-1)).limit(pageSize).toArray((err, results)=>
     {
